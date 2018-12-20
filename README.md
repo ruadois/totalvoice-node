@@ -125,7 +125,7 @@ const totalvoice = require('totalvoice-node');
 const client = new totalvoice("access-token");
 
 var opcoes = {velocidade: 2, tipo_voz: "br-Vitoria"};
-client.tts.enviar("4811111111", "Mensagem TTS", opcoes);
+client.tts.enviar("4811111111", "Mensagem TTS", opcoes)
     .then(function(data) {
         console.log(data);
     })
